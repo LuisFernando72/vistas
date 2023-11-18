@@ -1,0 +1,186 @@
+/*19122022*/
+
+
+
+::-webkit-scrollbar {
+  height: 5px;
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(1, 184, 187, 0.6);
+}
+
+::-webkit-scrollbar-thumb {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.6);
+}
+
+.containerControl {
+  margin-top: 40px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.containerCMedida {
+  width: 95%;
+  min-height: 440px;
+  max-height: 440px;
+  border-radius: 10px;
+  background: linear-gradient(113deg, rgba(253, 255, 255, 1) 30%, rgba(225, 250, 245, 1) 50%, rgba(4, 229, 165, 0.979) 100%);
+  overflow: auto;
+ 
+}
+
+.form {
+  margin-top: 15px;
+  /* height: 100%; */
+  position: relative;
+  padding: 10px;
+}
+
+.form h2 {
+  position: relative;
+  color: var(--text-color);
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.form h2::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  width: 100px;
+  height: 4px;
+  background: var(--primary-color);
+}
+
+
+
+.form .btns {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+
+}
+
+.form .btns button {
+  position: relative;
+  width: 50% !important;
+  height: 45px;
+  background: linear-gradient(90deg, #77fdbf 0%, #06ff8b 46%, #a4ffd5 100%);
+  border: none;
+  border-radius: 5px;
+  text-transform: uppercase;
+  border-bottom: 4px solid #02b662;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, .4);
+  font-size: 17px;
+  text-align: left;
+  box-shadow: 0px 3px 0px 0px rgba(0, 0, 0, .5);
+  cursor: pointer;
+  text-align: center;
+  margin: 0 auto;
+  margin: 10px 10px 10px 10px;
+  color: var(--white-color);
+}
+
+.form .btns button::after {
+  content: "";
+  width: 0;
+  height: 0;
+  border-top: 25px solid #02b662;
+  border-bottom: 20px solid #02b662;
+  border-left: 30px solid transparent;
+  border-right: 40px solid #02b662;
+  position: absolute;
+  opacity: 0.6;
+  right: 0;
+  top: 0;
+  border-radius: 0 5px 5px 0;
+}
+
+.form .btns button:hover {
+  color: var(--text-color);
+}
+
+.hide {
+  display: none;
+}
+
+#modalUser {
+  position: fixed;
+  background-color: transparent;
+  border: 0;
+}
+
+.ContainerTablePeso {
+  width: 100%;
+}
+
+.ContainerTablePeso .tablePeso {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.ContainerTablePeso .tablePeso table {
+  width: 100%;
+  min-width: 900px;
+  table-layout: fixed;
+  border-collapse: collapse;
+}
+
+.ContainerTablePeso .tablePeso thead tr th {
+  background-color: var(--secondary-color);
+  color: black;
+  position: sticky;
+  font-size: 10px;
+  text-align: center;
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+.ContainerTablePeso .tablePeso tbody td {
+  border: 1px solid black;
+  max-width: 100px;
+  font-size: 12px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  text-align: center;
+  cursor: pointer;
+}
+
+.ContainerTablePeso .tablePeso tbody tr:nth-child(even) {
+  background-color: var(--secondary-color);
+}
+
+.ContainerTablePeso .tablePeso tbody tr:hover {
+  background: #fce24c;
+}
+
+@media (max-width: 710px) {
+  .form .inputBox button {
+    margin: 10px;
+  }
+}
+
+@media (max-width: 415px) {
+  .form .inputBox button {
+    font-size: 11px;
+    padding: 10px 5px;
+  }
+
+  .form-principalMC form .paginaMC .campo .input-icon {
+    display: none;
+  }
+
+  .form-principalMC form .paginaMC .campo input {
+    border-radius: 4px;
+  }
+}
